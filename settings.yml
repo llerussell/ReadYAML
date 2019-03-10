@@ -1,0 +1,31 @@
+# Settings to be used by various SLM / Prairie interfacing scripts
+
+# SLM
+TransformFile: 20180723_2DSLMTransform_1X_Nikon16X_ETL0.mat
+TransformFile3D: 3DTransform_20181017_1617.mat
+SLM_Pixels_X: 512
+SLM_Pixels_Y: 512
+SLM_BitDepth: 8
+ZeroOrderBlockSize_PX: 35  # was 45, 35 quick hack
+HologramLibraryName: GenerateHologramCUDA  #was 8
+AutoAdjustWeights: 1  #true
+WeightingFile: 20170524_Satsuma_Leica25x_Weights_MaxCoord128.mat
+SteepnessFudgeFactor: 1  # increase steepness of weighting function
+
+# Galvo positions (GPLMaker)
+ScanAmp_X: -8.361121 6.821121  # left,right - save a grid gpl
+ScanAmp_Y: 8.345181 -8.145181  # top,bottom - save a grid gpl
+FOVsize_OpticalZoom: 1.2
+FOVsize_PX: 512
+FOVsize_UM_1x: 854.5
+
+# Mark points (XMLMaker)
+LaserName: Photostim
+LaserPowerScaleFactor: 2.1
+LaserPowerFile: Bruker2_PowerFile.mat  #mat file containing PV->mW fit
+TriggerLine: PFI1
+VoltageOutputCategoryName: Lloyd
+VoltageOutputExperimentName: 1msPulseOut_6713AO0
+
+# RawDataStream
+FlipEvenLines: 0
