@@ -1,6 +1,6 @@
 # ReadYAML
 ### What is YAML? 
-YAML stands for "YAML Ain't Markup Language", it is a human-readable data serialization language and it is commonly used for configuration files,
+YAML stands for 'YAML Ain't Markup Language', it is a human-readable data serialisation language and it is commonly used for configuration files.
 
 ### What is this thing?
 This little MATLAB utility reads in simple YAML files and returns them as structures, where YAML key/value pairs are fields of the structure. See example:
